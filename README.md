@@ -3,21 +3,21 @@
 mvn compile com.google.cloud.tools:jib-maven-plugin:1.6.1:build -Dimage=gcr.io/ravi-kubernetes-lab/helloworld_docker:v2
 kubectl run helloworld-restapi-1 --image=gcr.io/ravi-kubernetes-lab/helloworld_docker:v2 --port=8080
 kubectl expose deployment helloworld-restapi-1 --type=LoadBalancer
-https://youtu.be/f0FsaHhU7n0
 
 mvn clean install
 docker build -t gcr.io/ravi-kubernetes-lab/helloworld_h2_docker:v1 .
 docker push
 kubectl run helloworld-restapi-h2-2 --image=gcr.io/ravi-kubernetes-lab/helloworld_h2_docker:v1 --port=8080
 kubectl expose deployment helloworld-restapi-h2-2 --type=LoadBalancer
-https://youtu.be/aHueapU8RBI
 
 mvn clean install
 docker build -t gcr.io/ravi-kubernetes-lab/todo_web_h2_msql_docker:v1 .
 kompose convert
 kubectl apply -f mysql-database-data-volume-persistentvolumeclaim.yaml,mysql-deployment.yaml,mysql-service.yaml,todo-web-application-deployment.yaml,todo-web-application-service.yaml
-https://youtu.be/pYl4VuQXyuo
 ```
+- [Video - helloworld](https://youtu.be/f0FsaHhU7n0)
+- [Video - to do h2](https://youtu.be/aHueapU8RBI)
+- [Video - to do mysql](https://youtu.be/pYl4VuQXyuo)
 
 # Docker Crash Course for Java Developers
 
