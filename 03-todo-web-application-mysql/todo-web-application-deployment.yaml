@@ -1,0 +1,38 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.16.0 (0c01309)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: todo-web-application
+  name: todo-web-application
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: todo-web-application
+    spec:
+      containers:
+      - env:
+        - name: RDS_DB_NAME
+          value: todos
+        - name: RDS_HOSTNAME
+          value: mysql
+        - name: RDS_PASSWORD
+          value: dummytodos
+        - name: RDS_PORT
+          value: "3306"
+        - name: RDS_USERNAME
+          value: todos-user
+        image: gcr.io/ravi-kubernetes-lab/todo_web_h2_msql_docker:v1
+        name: todo-web-application
+        ports:
+        - containerPort: 8080
+        resources: {}
+      restartPolicy: Always
+status: {}
