@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: currency-exchange-01
+  labels:
+    app: currency-exchange-01
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: currency-exchange-01
+  template:
+    metadata:
+      labels:
+        app: currency-exchange-01
+    spec:
+      containers:
+      - name: currency-exchange
+        image: gcr.io/ravi-kubernetes-lab/currency-exchange-sk:v4
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: currency-exchange-01
+  labels:
+    app: currency-exchange-01
+spec:
+  type: Loadbalancer
+  ports:
+  - port: 8080
+    protocol: TCP
+  selector:
+    app: currency-exchange-01

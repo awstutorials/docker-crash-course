@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: gateway-ingress
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /currency-exchange
+        backend:
+          serviceName: currency-exchange
+          servicePort: 8080
+      - path: /currency-conversion
+        backend:
+          serviceName: currency-conversion
+          servicePort: 8080
