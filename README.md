@@ -19,6 +19,57 @@ kubectl apply -f mysql-database-data-volume-persistentvolumeclaim.yaml,mysql-dep
 - [Video - to do h2](https://youtu.be/aHueapU8RBI)
 - [Video - to do mysql](https://youtu.be/pYl4VuQXyuo)
 
+#More videos and comments
+ConfigMap & Secrets
+cd /Users/ravishankar/28minutes/google/01.course/docker-crash-course/03-todo-web-application-mysql
+gcloud container clusters get-credentials standard-cluster-1 --zone=europe-west1-b
+gcloud auth configure-docker
+docker build -t gcr.io/ravi-kubernetes-tutorial/todo_web_h2_msql_docker:v1 .
+kubectl apply -f mysql-database-data-volume-persistentvolumeclaim.yaml,mysql-deployment.yaml, mysql-service
+#get the loadbalanced mysql ip address and update config map
+kubectl apply -f mysql-configmap.yaml, mysql-secret.yaml
+kubectl apply -f todo-web-application-deployment-cf.yaml, todo-web-application-service.yaml
+
+Microservices
+=============
+Option 1:
+mvn compile com.google.cloud.tools:jib-maven-plugin:1.6.1:build -Dimage=gcr.io/ravi-kubernetes-tutorial/currency-exchange:v2
+kubectl run currency-exchange --image=gcr.io/ravi-kubernetes-tutorial/currency-exchange:v2 --port=8080
+kubectl expose deployment currency-exchange --type=LoadBalancer
+
+mvn compile com.google.cloud.tools:jib-maven-plugin:1.6.1:build -Dimage=gcr.io/ravi-kubernetes-tutorial/currency-conversion:v2
+kubectl run currency-conversion --image=gcr.io/ravi-kubernetes-tutorial/currency-conversion:v2 --port=8080
+kubectl expose deployment currency-conversion --type=LoadBalancer
+
+Option 2:
+cd /Users/ravishankar/28minutes/google/01.course/docker-crash-course/07-microservices/currency-conversion-service
+mvn compile com.google.cloud.tools:jib-maven-plugin:1.6.1:build -Dimage=gcr.io/ravi-kubernetes-tutorial/currency-conversion-sk:v6
+cd /Users/ravishankar/28minutes/google/01.course/docker-crash-course/07-microservices/currency-exchange-service
+mvn compile com.google.cloud.tools:jib-maven-plugin:1.6.1:build -Dimage=gcr.io/ravi-kubernetes-tutorial/currency-exchange-sk:v5
+
+cd /Users/ravishankar/28minutes/google/01.course/docker-crash-course/07-microservices
+kubectl apply -f currency-conversion-deployment.yaml,currency-exchange-deployment.yaml
+kubectl apply -f gateway-01.yaml
+kubectl apply -f rabc.yaml
+
+Prometheus monitoring
+=====================
+cd /Users/ravishankar/28minutes/google/01.course/docker-crash-course/07-microservices
+ACCOUNT=$(gcloud info --format='value(config.account)')
+kubectl create clusterrolebinding owner-cluster-admin-binding \
+    --clusterrole cluster-admin \
+    --user $ACCOUNT
+cd /Users/ravishankar/28minutes/google/01.course/docker-crash-course/07-microservices/currency-conversion-service/prometheus
+kubectl create namespace monitoring
+kubectl create -f clusterRole.yaml, config-map.yaml
+kubectl create -f prom-deployment.yaml, prom-service.yaml
+
+- [Video - ConfigMaps and Secrets](https://youtu.be/tArOz5rWyeE)
+- [Video - Microservice, Service Discovery](https://youtu.be/ybu2kR4VeSY)
+- [Video - ingress-apigateway](https://youtu.be/sELMLnIG78s)
+- [Video - Prometheus] (https://youtu.be/YEJ7QWNR0WY)
+
+
 # Docker Crash Course for Java Developers
 
 ## Learn Docker creating containers for Spring Boot APIs and Microservices
