@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: currency-conversion
-        image: gcr.io/ravi-kubernetes-lab/currency-conversion-sk:v6
+        image: gcr.io/ravi-kubernetes-tutorial/currency-conversion-sk:v6
         ports:
         - containerPort: 8080
 ---

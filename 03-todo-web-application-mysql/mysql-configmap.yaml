@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysqldb
+data:
+  database-name: todos
+  host: 34.77.225.244

@@ -19,8 +19,6 @@ public class CurrencyConversionController {
 	@Autowired
 	private RestTemplate restTemplate;
 
-	//@Value("${value.from.file}")
-	//private String restUrl;
 	@Autowired
 	private CurrencyExchangeServiceProxy proxy;
 

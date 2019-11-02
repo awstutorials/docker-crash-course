@@ -1,0 +1,48 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.16.0 (0c01309)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: todo-web-application
+  name: todo-web-application
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: todo-web-application
+    spec:
+      containers:
+      - name: todo-web-application
+        image: gcr.io/ravi-kubernetes-tutorial/todo_web_h2_msql_docker:v1
+        ports:
+        - containerPort: 8080
+        env:
+        - name: RDS_DB_NAME
+          valueFrom:
+            configMapKeyRef:
+              name: mysqldb
+              key: database-name
+        - name: RDS_HOSTNAME
+          valueFrom:
+            configMapKeyRef:
+              name: mysqldb
+              key: host
+        - name: RDS_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: mysqldb
+              key: database-user
+        - name: RDS_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mysqldb
+              key: database-password
+        resources: {}
+      restartPolicy: Always
+status: {}

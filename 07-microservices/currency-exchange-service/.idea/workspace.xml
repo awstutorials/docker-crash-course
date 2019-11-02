@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a58a32d8-7e59-46a3-924c-bf208989fa1a" name="Default Changelist" comment="" />
+    <list default="true" id="a58a32d8-7e59-46a3-924c-bf208989fa1a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../03-todo-web-application-mysql/mysql-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../03-todo-web-application-mysql/mysql-deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03-todo-web-application-mysql/mysql-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../03-todo-web-application-mysql/mysql-service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clusterRole.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-map.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion-deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion-service/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/src/main/java/com/in28minutes/microservices/currencyconversionservice/resource/CurrencyConversionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion-service/src/main/java/com/in28minutes/microservices/currencyconversionservice/resource/CurrencyConversionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-exchange-deployment-01.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-exchange-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-exchange-deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../patch.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prom-deployment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prom-service.yaml" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="134" column="40" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
+            <state relative-caret-position="1073">
+              <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="136" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -29,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/in28minutes/microservices/currencyexchangeservice/CurrencyExchangeServiceApplicationH2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="90">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -41,12 +56,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/in28minutes/microservices/currencyexchangeservice/resource/CurrencyExchangeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
+            <state relative-caret-position="-19">
               <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
               <folding>
                 <element signature="e#726#727#0" expanded="true" />
                 <element signature="e#744#745#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/in28minutes/microservices/currencyexchangeservice/resource/ExchangeValueRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/in28minutes/microservices/currencyexchangeservice/resource/ExchangeValue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -89,8 +122,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -140,25 +171,12 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="security" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="05-currency-exchange-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="currency-exchange-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="environment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="05-currency-exchange-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="currency-exchange-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -168,7 +186,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572555483544" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572653071855" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -205,17 +223,18 @@
       <updated>1572298404085</updated>
       <workItem from="1572298405319" duration="3509000" />
       <workItem from="1572470605091" duration="3662000" />
-      <workItem from="1572534522280" duration="2565000" />
+      <workItem from="1572534522280" duration="2957000" />
+      <workItem from="1572639162440" duration="4657000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9736000" />
+    <option name="totallyTimeSpent" value="14785000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="975" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25579977" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25885227" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -254,21 +273,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/in28minutes/microservices/currencyexchangeservice/CurrencyExchangeServiceApplicationH2.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/in28minutes/microservices/currencyexchangeservice/resource/CurrencyExchangeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding>
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="41" selection-start-column="41" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -279,17 +287,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/in28minutes/microservices/currencyexchangeservice/resource/ExchangeValueRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="41" selection-start-column="41" selection-end-column="41" />
+        <state relative-caret-position="72">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/in28minutes/microservices/currencyexchangeservice/resource/ExchangeValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/in28minutes/microservices/currencyexchangeservice/resource/CurrencyExchangeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="e#726#727#0" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="134" column="40" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
+        <state relative-caret-position="1073">
+          <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="136" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/in28minutes/microservices/currencyexchangeservice/CurrencyExchangeServiceApplicationH2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>

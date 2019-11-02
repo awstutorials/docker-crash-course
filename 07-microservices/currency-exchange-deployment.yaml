@@ -1,10 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  annotations:
-    prometheus.io/scrape: 'true'
-    prometheus.io/path: '/manage/prometheus'
-    prometheus.io/port: '8080'
   name: currency-exchange
   labels:
     app: currency-exchange
@@ -20,17 +16,13 @@ spec:
     spec:
       containers:
       - name: currency-exchange
-        image: gcr.io/ravi-kubernetes-lab/currency-exchange-sk:v5
+        image: gcr.io/ravi-kubernetes-tutorial/currency-exchange-sk:v5
         ports:
         - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  annotations:
-    prometheus.io/scrape: 'true'
-    prometheus.io/path: '/manage/prometheus'
-    prometheus.io/port: '8080'
   name: currency-exchange
   labels:
     app: currency-exchange

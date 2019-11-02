@@ -27,7 +27,7 @@ spec:
         - name: MYSQL_ROOT_PASSWORD
           value: dummypassword
         - name: MYSQL_USER
-          value: todos-user
+          value: todos-user-cf
         image: mysql:5.7
         name: mysql
         ports:
