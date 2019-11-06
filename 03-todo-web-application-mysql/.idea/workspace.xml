@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d36f08f8-04ad-4a66-9e16-ce6de9cfbdf1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mysql-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07-microservices/clusterRole.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07-microservices/config-map.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07-microservices/currency-conversion-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../07-microservices/currency-conversion-deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06-microservices/currency-conversion-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../06-microservices/currency-conversion-service/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06-microservices/currency-exchange-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../06-microservices/currency-exchange-service/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../07-microservices/currency-conversion-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../07-microservices/currency-conversion-service/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07-microservices/currency-conversion-service/src/main/java/com/in28minutes/microservices/currencyconversionservice/resource/CurrencyConversionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../07-microservices/currency-conversion-service/src/main/java/com/in28minutes/microservices/currencyconversionservice/resource/CurrencyConversionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07-microservices/currency-exchange-deployment-01.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07-microservices/currency-exchange-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../07-microservices/currency-exchange-deployment.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../07-microservices/currency-exchange-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../07-microservices/currency-exchange-service/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07-microservices/gateway.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07-microservices/patch.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07-microservices/prom-deployment.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07-microservices/prom-service.yaml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -196,7 +187,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572653596696" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572655725625" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />

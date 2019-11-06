@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: currency-conversion
+  labels:
+    app: currency-conversion
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: currency-conversion
+  template:
+    metadata:
+      labels:
+        app: currency-conversion
+    spec:
+      containers:
+      - name: currency-conversion
+        image: {{ .Values.currencyconversion.image}}
+        ports:
+        - containerPort: {{ .Values.currencyconversion.port}}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: currency-conversion
+  labels:
+    app: currency-conversion
+spec:
+  ports:
+  - port: 8080
+    protocol: TCP
+  selector:
+    app: currency-conversion

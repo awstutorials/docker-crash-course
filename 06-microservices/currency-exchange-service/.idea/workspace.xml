@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8533ea1d-e93b-4d8c-8622-0ca67313fa29" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../03-todo-web-application-mysql/mysql-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../03-todo-web-application-mysql/mysql-deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03-todo-web-application-mysql/mysql-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../03-todo-web-application-mysql/mysql-service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07-microservices/clusterRole.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07-microservices/config-map.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07-microservices/currency-conversion-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07-microservices/currency-conversion-deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03-todo-web-application-mysql/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../03-todo-web-application-mysql/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion-service/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../07-microservices/currency-conversion-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07-microservices/currency-conversion-service/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07-microservices/currency-conversion-service/src/main/java/com/in28minutes/microservices/currencyconversionservice/resource/CurrencyConversionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07-microservices/currency-conversion-service/src/main/java/com/in28minutes/microservices/currencyconversionservice/resource/CurrencyConversionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07-microservices/currency-exchange-deployment-01.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07-microservices/currency-exchange-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07-microservices/currency-exchange-deployment.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../07-microservices/currency-exchange-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07-microservices/currency-exchange-service/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07-microservices/gateway.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07-microservices/patch.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07-microservices/prom-deployment.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07-microservices/prom-service.yaml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -166,6 +157,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="975" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />

@@ -1,0 +1,29 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: helloworld-rest-buggy
+spec:
+  replicas: 2
+  minReadySeconds: 15
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: helloworld-restapi
+        version: v2
+    spec:
+      containers:
+        - image: gcr.io/ravi-kubernetes-tutorial/helloworld_istio:v2
+          imagePullPolicy: Always
+          name: helloworld-restapi
+          env:
+            - name: JAEGER_HOST
+              value: jaeger-agent.istio-system.svc.cluster.local
+            - name: JAEGER_SERVICE_NAME
+              value: helloworld-rest-buggy
+          ports:
+            - containerPort: 8080

@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: currency-exchange
+  labels:
+    app: currency-exchange
+spec:
+  replicas: 1
+  minReadySeconds: 15
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  selector:
+    matchLabels:
+      app: currency-exchange
+  template:
+    metadata:
+      labels:
+        app: currency-exchange
+        version: v1
+    spec:
+      containers:
+      - name: currency-exchange
+        image: {{ .Values.currencyexchange.image}}
+        ports:
+        - containerPort: {{ .Values.currencyexchange.port}}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: currency-exchange
+  labels:
+    app: currency-exchange
+spec:
+  ports:
+  - port: 80
+    targetPort: 80
+    protocol: TCP
+  selector:
+    app: currency-exchange

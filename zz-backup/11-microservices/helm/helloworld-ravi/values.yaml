@@ -1,0 +1,11 @@
+currencyexchange:
+  image: gcr.io/ravi-kubernetes-tutorial/currency-exchange-istio:v1
+  port: 80
+  servicetype: NodePort
+currencyconversion:
+  image: gcr.io/ravi-kubernetes-tutorial/currency-conversion-istio:v3
+  port: 80
+  servicetype: NodePort
+gateway:
+  currencyexchangepath: /currency-exchange/*
+  currencyconversionpath: /currency-conversion/*
