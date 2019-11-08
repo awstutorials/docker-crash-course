@@ -69,6 +69,13 @@ kubectl create -f prom-deployment.yaml, prom-service.yaml
 - [Video - ingress-apigateway](https://youtu.be/sELMLnIG78s)
 - [Video - Prometheus] (https://youtu.be/YEJ7QWNR0WY)
 
+Istio
+======
+
+- [Video - Istio intro helloworld kiali grafana new](https://youtu.be/i2YbK8BbdQg)
+- [Video - Istio canary circuitbreaking mirroring](https://youtu.be/_3eUYpkKnoA)
+- [Video - Istio microservices distributedtracing](https://youtu.be/xjptr162Lmc)
+- [Video - Gcp Istio Tracing Monitoring] (https://youtu.be/Sc60ODON49M)
 
 # Docker Crash Course for Java Developers
 
