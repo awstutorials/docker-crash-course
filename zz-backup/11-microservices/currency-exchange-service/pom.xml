@@ -30,20 +30,20 @@
 
 	<dependencies>
 
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-kubernetes</artifactId>
-			<version>0.3.0.BUILD-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-kubernetes-ribbon</artifactId>
-			<version>0.3.0.BUILD-SNAPSHOT</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.cloud</groupId>-->
+			<!--<artifactId>spring-cloud-starter-kubernetes</artifactId>-->
+			<!--<version>0.3.0.BUILD-SNAPSHOT</version>-->
+		<!--</dependency>-->
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.cloud</groupId>-->
+			<!--<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>-->
+		<!--</dependency>-->
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.cloud</groupId>-->
+			<!--<artifactId>spring-cloud-starter-kubernetes-ribbon</artifactId>-->
+			<!--<version>0.3.0.BUILD-SNAPSHOT</version>-->
+		<!--</dependency>-->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -140,35 +140,13 @@
 		<dependency>
 			<groupId>io.opentracing.contrib</groupId>
 			<artifactId>opentracing-spring-cloud-starter</artifactId>
-			<!--<version>0.1.7</version>-->
+			<version>0.1.7</version>
 		</dependency>
 		<dependency>
 			<groupId>io.jaegertracing</groupId>
 			<artifactId>jaeger-tracerresolver</artifactId>
 			<version>0.29.0</version>
 		</dependency>
-		<!--<dependency>-->
-			<!--<groupId>io.opentracing.contrib</groupId>-->
-			<!--<artifactId>opentracing-spring-jaeger-cloud-starter</artifactId>-->
-		<!--</dependency>-->
-		<!--<dependency>-->
-			<!--<groupId>io.opentracing.contrib</groupId>-->
-			<!--<artifactId>opentracing-spring-cloud-starter</artifactId>-->
-		<!--</dependency>-->
-		<!--<dependency>-->
-			<!--<groupId>io.jaegertracing</groupId>-->
-			<!--<artifactId>jaeger-tracerresolver</artifactId>-->
-			<!--<version>0.29.0</version>-->
-		<!--</dependency>-->
-		<!--<dependency>-->
-			<!--<groupId>io.jaegertracing</groupId>-->
-			<!--<artifactId>jaeger-client</artifactId>-->
-			<!--<version>0.34.0</version>-->
-		<!--</dependency>-->
-		<!--<dependency>-->
-			<!--<groupId>io.opentracing.contrib</groupId>-->
-			<!--<artifactId>opentracing-spring-web-autoconfigure</artifactId>-->
-		<!--</dependency>-->
 	</dependencies>
 
 	<dependencyManagement>

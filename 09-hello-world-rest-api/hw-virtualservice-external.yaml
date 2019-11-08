@@ -1,7 +1,7 @@
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
-  name: sa-external-services
+  name: helloworld-virtual-services
 spec:
   hosts:
   - "*"
@@ -17,4 +17,4 @@ spec:
     - destination:
         host: helloworld-restapi             # 2
         port:
-          number: 80
+          number: 8080

@@ -1,15 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="488ccc55-564c-48a6-ae9c-6c71893f1d91" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../01-hello-world-rest-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-hello-world-rest-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01-hello-world-rest-api/src/main/java/com/in28minutes/rest/webservices/restfulwebservices/HelloWorldController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-hello-world-rest-api/src/main/java/com/in28minutes/rest/webservices/restfulwebservices/HelloWorldController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01-hello-world-rest-api/src/main/java/com/in28minutes/rest/webservices/restfulwebservices/RestfulWebServicesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-hello-world-rest-api/src/main/java/com/in28minutes/rest/webservices/restfulwebservices/RestfulWebServicesApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03-todo-web-application-mysql/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../03-todo-web-application-mysql/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../06-microservices/currency-conversion-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../06-microservices/currency-conversion-service/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../06-microservices/currency-exchange-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../06-microservices/currency-exchange-service/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07-microservices/currency-conversion-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07-microservices/currency-conversion-service/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07-microservices/currency-exchange-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07-microservices/currency-exchange-service/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a586252a-f81a-478e-8b9e-3eed4bfd1f49" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../10-hello-world-rest-api-canary/helloworld-service-deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../09-hello-world-rest-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../09-hello-world-rest-api/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../09-hello-world-rest-api/01-hello-world-rest-api.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../09-hello-world-rest-api/helloworld-v1-restapi-service.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../09-hello-world-rest-api/hw-virtualservice-external.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../09-hello-world-rest-api/hw-virtualservice-external.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../09-hello-world-rest-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../09-hello-world-rest-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../kubernetes-commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../kubernetes-commands.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10-hello-world-rest-api-canary/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../10-hello-world-rest-api-canary/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10-hello-world-rest-api-canary/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../10-hello-world-rest-api-canary/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10-hello-world-rest-api-canary/01-hello-world-rest-api.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10-hello-world-rest-api-canary/hellow-subsets-destinationrule.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10-hello-world-rest-api-canary/hellow-subsets-shadowing-vs.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10-hello-world-rest-api-canary/helloworld-v2-deployment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10-hello-world-rest-api-canary/http-gateway.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../10-hello-world-rest-api-canary/http-gateway.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10-hello-world-rest-api-canary/hw-virtualservice-external.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10-hello-world-rest-api-canary/istio-vs-dr.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10-hello-world-rest-api-canary/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../10-hello-world-rest-api-canary/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__com_github_mifmif_generex_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__com_google_guava_guava_16_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__com_netflix_archaius_archaius_core_0_7_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__com_netflix_hystrix_hystrix_core_1_5_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_commons_util_0_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_statistics_0_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__com_netflix_ribbon_ribbon_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__com_netflix_ribbon_ribbon_core_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__com_netflix_ribbon_ribbon_httpclient_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__com_netflix_ribbon_ribbon_loadbalancer_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__com_netflix_ribbon_ribbon_transport_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__com_netflix_servo_servo_core_0_12_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__com_squareup_okhttp3_logging_interceptor_3_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__com_sun_jersey_contribs_jersey_apache_client4_1_19_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_19_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_19_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__commons_configuration_commons_configuration_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__dk_brics_automaton_automaton_1_11_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_fabric8_kubernetes_client_4_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_fabric8_kubernetes_model_4_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_fabric8_zjsonpatch_0_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_github_openfeign_feign_core_10_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_github_openfeign_feign_hystrix_10_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_github_openfeign_feign_slf4j_10_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_github_openfeign_form_feign_form_3_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_github_openfeign_form_feign_form_spring_3_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_jaegertracing_jaeger_core_0_29_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_jaegertracing_jaeger_thrift_0_29_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_jaegertracing_jaeger_tracerresolver_0_29_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_opentracing_contrib_opentracing_spring_cloud_starter_unknown.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_opentracing_contrib_opentracing_tracerresolver_0_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_opentracing_opentracing_api_0_31_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_opentracing_opentracing_noop_0_31_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_opentracing_opentracing_util_0_31_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_reactivex_rxjava_1_3_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_reactivex_rxnetty_0_4_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_reactivex_rxnetty_contexts_0_4_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_reactivex_rxnetty_servo_0_4_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_zipkin_brave_brave_5_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_zipkin_brave_brave_context_log4j2_5_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_http_5_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_httpasyncclient_5_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_httpclient_5_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_jms_5_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_kafka_clients_5_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_servlet_5_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_spring_rabbit_5_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_spring_web_5_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_spring_webmvc_5_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_zipkin_reporter2_zipkin_reporter_2_7_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__io_zipkin_zipkin2_zipkin_2_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__org_apache_thrift_libthrift_0_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__org_aspectj_aspectjrt_1_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_60.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_60.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_kubernetes_core_1_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_kubernetes_discovery_1_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_kubernetes_ribbon_1_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_archaius_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_sleuth_core_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_kubernetes_0_3_0_BUILD_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_kubernetes_ribbon_0_3_0_BUILD_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_archaius_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_sleuth_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion-service/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion-service/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/06-currency-conversion-service.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/src/main/java/com/in28minutes/microservices/currencyconversionservice/CurrencyConversionServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion-service/src/main/java/com/in28minutes/microservices/currencyconversionservice/CurrencyConversionServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/src/main/java/com/in28minutes/microservices/currencyconversionservice/resource/CurrencyConversionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion-service/src/main/java/com/in28minutes/microservices/currencyconversionservice/resource/CurrencyConversionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/src/main/java/com/in28minutes/microservices/currencyconversionservice/resource/CurrencyExchangeServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion-service/src/main/java/com/in28minutes/microservices/currencyconversionservice/resource/CurrencyExchangeServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_mifmif_generex_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_16_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_archaius_archaius_core_0_7_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_core_1_5_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_commons_util_0_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_statistics_0_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_core_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_httpclient_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_loadbalancer_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_transport_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_servo_servo_core_0_12_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_logging_interceptor_3_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_contribs_jersey_apache_client4_1_19_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_19_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_19_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dk_brics_automaton_automaton_1_11_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_fabric8_kubernetes_client_4_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_fabric8_kubernetes_model_4_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_fabric8_zjsonpatch_0_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_contrib_opentracing_spring_cloud_starter_unknown.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava_1_3_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_0_4_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_contexts_0_4_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_servo_0_4_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_60.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_60.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_1_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_1_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_kubernetes_core_1_0_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_kubernetes_discovery_1_0_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_kubernetes_ribbon_1_0_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_archaius_2_1_0_RC3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_1_0_RC3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_1_0_RC2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_kubernetes_0_3_0_BUILD_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_kubernetes_ribbon_0_3_0_BUILD_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_archaius_2_1_0_RC3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_2_1_0_RC3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-currency-exchange-service.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/in28minutes/microservices/currencyexchangeservice/CurrencyExchangeServiceApplicationH2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/in28minutes/microservices/currencyexchangeservice/CurrencyExchangeServiceApplicationH2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helm/helloworld-ravi/templates/cc-vr-dr.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helm/helloworld-ravi/templates/currency-conversion-deployment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helm/helloworld-ravi/templates/currency-exchange-deployment-fault.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helm/helloworld-ravi/templates/currency-exchange-deployment.yaml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +181,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/in28minutes/microservices/currencyexchangeservice/CurrencyExchangeServiceApplicationH2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            <state relative-caret-position="180">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,16 +193,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/in28minutes/microservices/currencyexchangeservice/util/environment/EnvironmentConfigurationLogger.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="-1867">
+              <caret line="27" selection-start-line="26" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -49,17 +205,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/in28minutes/microservices/currencyexchangeservice/resource/CurrencyExchangeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="139" column="8" selection-start-line="139" selection-start-column="8" selection-end-line="148" selection-end-column="21" />
+            <state relative-caret-position="90">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -67,15 +214,13 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/in28minutes/microservices/currencyexchangeservice/CurrencyExchangeServiceApplicationH2.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/in28minutes/microservices/currencyexchangeservice/resource/CurrencyExchangeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/in28minutes/microservices/currencyexchangeservice/CurrencyExchangeServiceApplicationH2.java" />
       </list>
     </option>
   </component>
@@ -91,15 +236,12 @@
     <option name="width" value="1680" />
     <option name="height" value="975" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -141,33 +283,11 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="resource" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="05-currency-exchange-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="currency-exchange-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="05-currency-exchange-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="currency-exchange-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="environment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="05-currency-exchange-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="currency-exchange-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -178,7 +298,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573080136718" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573247068762" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -209,24 +329,24 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="488ccc55-564c-48a6-ae9c-6c71893f1d91" name="Default Changelist" comment="" />
-      <created>1573073606259</created>
+      <changelist id="a586252a-f81a-478e-8b9e-3eed4bfd1f49" name="Default Changelist" comment="" />
+      <created>1573142838516</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1573073606259</updated>
-      <workItem from="1573073607586" duration="2614000" />
-      <workItem from="1573077038569" duration="3029000" />
+      <updated>1573142838516</updated>
+      <workItem from="1573142840141" duration="5552000" />
+      <workItem from="1573235940195" duration="1191000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5643000" />
+    <option name="totallyTimeSpent" value="6743000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="975" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25274727" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25274727" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -236,13 +356,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.45300114" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3295583" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.4428086" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
@@ -265,37 +385,27 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/in28minutes/microservices/currencyexchangeservice/util/environment/EnvironmentConfigurationLogger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="139" column="8" selection-start-line="139" selection-start-column="8" selection-end-line="148" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/in28minutes/microservices/currencyexchangeservice/resource/CurrencyExchangeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="90">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/in28minutes/microservices/currencyexchangeservice/CurrencyExchangeServiceApplicationH2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        <state relative-caret-position="180">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1867">
+          <caret line="27" selection-start-line="26" selection-end-line="27" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,81 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: currency-conversion
+  labels:
+    app: currency-conversion
+spec:
+  ports:
+    - port: 8080
+      name: http
+  selector:
+    app: currency-conversion
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: currency-conversion-v1
+  labels:
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: currency-conversion
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: currency-conversion
+        version: v1
+    spec:
+      containers:
+        - name: currency-conversion
+          image:  gcr.io/ravi-kubernetes-tutorial/currency-conversion-istio-trace:v2
+          resources:
+            requests:
+              cpu: "100m"
+          imagePullPolicy: IfNotPresent #Always
+          env:
+          - name: JAEGER_SERVICE_NAME
+            value: currency-conversion
+          - name: JAEGER_AGENT_HOST
+            value: jaeger-agent.istio-system.svc.cluster.local
+          - name: JAEGER_REPORTER_LOG_SPANS
+            value: "true"
+          - name: JAEGER_SAMPLER_TYPE
+            value: const
+          - name: JAEGER_SAMPLER_PARAM
+            value: "1"
+          - name: JAEGER_PROPAGATION
+            value: b3
+          ports:
+            - containerPort: 8080
+#---
+#apiVersion: apps/v1
+#kind: Deployment
+#metadata:
+#  name: helloworld-v2
+#  labels:
+#    version: v2
+#spec:
+#  replicas: 1
+#  selector:
+#    matchLabels:
+#      app: helloworld
+#      version: v2
+#  template:
+#    metadata:
+#      labels:
+#        app: helloworld
+#        version: v2
+#    spec:
+#      containers:
+#        - name: helloworld
+#          image: gcr.io/ravi-kubernetes-tutorial/helloworld_istio:v2
+#          resources:
+#            requests:
+#              cpu: "100m"
+#          imagePullPolicy: IfNotPresent #Always
+#          ports:
+#            - containerPort: 8080

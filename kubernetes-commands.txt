@@ -188,10 +188,11 @@ kubectl create secret generic kiali -n istio-system --from-literal=username=admi
 
 
 ===============================================================================
-
+All Istio related commands to install and run
 
 gcloud container clusters get-credentials standard-cluster-1 --zone=europe-west1-b
 kubectl create namespace istio-system
+curl -L https://git.io/getLatestIstio | ISTIO_VERSION=1.2.2 sh -
 for i in install/kubernetes/helm/istio-init/files/crd*yaml; do kubectl apply -f $i; done
 helm template install/kubernetes/helm/istio --name istio --set global.mtls.enabled=false --set tracing.enabled=true --set kiali.enabled=true --set grafana.enabled=true --namespace istio-system > istio.yaml
 kubectl apply -f istio.yaml
@@ -233,3 +234,34 @@ kubectl apply -f hellow-subsets-shadowing-vs.yaml
 mvn compile com.google.cloud.tools:jib-maven-plugin:1.6.1:build -Dimage=gcr.io/ravi-kubernetes-tutorial/currency-conversion-istio:v3
 
 kubectl get pods -l app=currency-exchange --show-labels
+
+for ((i=1;i<=1000;i++)); do   curl -v --header "Connection: keep-alive" "http://35.195.239.77/hello-world"; done
+
+
+============================================
+mvn compile com.google.cloud.tools:jib-maven-plugin:1.6.1:build -Dimage=gcr.io/ravi-kubernetes-tutorial/currency-conversion-istio:v6
+
+mvn compile com.google.cloud.tools:jib-maven-plugin:1.6.1:build -Dimage=gcr.io/ravi-kubernetes-tutorial/currency-exchange-istio:v6
+
+for i in `seq 1 10000`; do curl -s -o /dev/null http://35.240.85.218/currency-conversion/from/EUR/to/INR/quantity/100; done
+
+http://34.77.44.123/currency-conversion/from/EUR/to/INR/quantity/100
+
+for ((i=1;i<=1000;i++)); do   curl -v --header "Connection: keep-alive" "http://34.77.44.123/currency-conversion/from/EUR/to/INR/quantity/100"; done
+
+for ((i=1;i<=1000;i++)); do   curl -v --header "Connection: keep-alive" "http://35.195.239.77/currency-conversion/from/EUR/to/INR/quantity/100"; done
+
+
+
+======================================
+Istio enabled in GCP
+gcloud container clusters get-credentials standard-cluster-1 --zone=europe-west1-b
+kubectl label namespace default istio-injection=enabled
+sh ./helm-tiller.sh 
+
+mvn compile com.google.cloud.tools:jib-maven-plugin:1.6.1:build -Dimage=gcr.io/ravi-kubernetes-tutorial/currency-conversion-istio-trace:v1
+
+mvn compile com.google.cloud.tools:jib-maven-plugin:1.6.1:build -Dimage=gcr.io/ravi-kubernetes-tutorial/currency-exchange-istio-trace:v1
+
+http://35.195.239.77/currency-conversion/from/EUR/to/INR/quantity/100
+
